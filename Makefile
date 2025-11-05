@@ -11,8 +11,8 @@ install:
 
 results/Clustering_Assignment.R
 
-figures/summary_gap.png: R/plot_results.R results/gap_results.csv | figures
-	$(R) R/plot_results.R
+figures/summary_gap.png: R/clustering_1 results/gap_results.csv | figures
+	$(R) R/clustering
 
 run: results/gap_results.csv
 plots: figures/summary_gap.png
